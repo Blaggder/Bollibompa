@@ -233,6 +233,11 @@ public class Player extends Entity {
 					hasStar--;
 				}
 				break;
+				case "Puzzlepiece":
+				gp.obj[i]=null;
+				gp.ui.showMessage("YOU COMPLETED THE GAME");
+				gp.gameThread = null;
+				break;
 			case "SDoor":
 				if (hasStar > 0) {
 					hasStar = 0;

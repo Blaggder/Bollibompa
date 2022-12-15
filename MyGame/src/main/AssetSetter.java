@@ -1,6 +1,7 @@
 package main;
 
 import object.OBJ_Door;
+import object.OBJ_Puzzlepiece;
 import object.OBJ_Star;
 import object.OBJ_Superdoor;
 import object.OBJ_Tree;
@@ -36,6 +37,10 @@ break;
 		gp.obj[i].worldX = x * 50;
 		gp.obj[i].worldY = y * 25;
 	break;
+	case "puzzlepiece":
+	gp.obj[i] = new OBJ_Puzzlepiece();
+		gp.obj[i].worldX = x * 50;
+		gp.obj[i].worldY = y * 50;
 	}
 }
 
@@ -55,7 +60,8 @@ break;
 			OBJ("star",8, 30, 35,0);
 			OBJ("star",9, 7, 45,0);
 			OBJ("door",11, 25, 20,0);
-			OBJ("superdoor",10, 47, 45, 1);
+			OBJ("door",12, 47, 45,0);
+			OBJ("puzzlepiece",10, 48, 43, 0);
 			break;
 		}
 	}

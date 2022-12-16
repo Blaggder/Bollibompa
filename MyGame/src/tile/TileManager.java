@@ -22,7 +22,7 @@ public class TileManager {
 		this.gp = gp;
 		
 		tile = new Tile[10];
-		mapTileNum = new int[50][50];
+		mapTileNum = new int[gp.maxWorldCol][gp.maxWorldRow];
 		//mapTileNum2 = new int[20][10];
 		
 		getTileImage();

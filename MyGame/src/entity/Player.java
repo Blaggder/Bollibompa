@@ -235,7 +235,7 @@ public class Player extends Entity {
 				break;
 				case "Puzzlepiece":
 				gp.obj[i]=null;
-				gp.ui.showMessage("YOU COMPLETED THE GAME");
+				gp.ui.showMessage("YOU COMPLETED THE GAME, BUT AT WHAT COST?");
 				gp.gameThread = null;
 				break;
 			case "SDoor":
